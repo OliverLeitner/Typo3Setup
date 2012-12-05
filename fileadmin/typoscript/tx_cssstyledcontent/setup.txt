@@ -1,0 +1,2 @@
+#our content styles are all in tt_content.css
+plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >

@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+html body div#wrapper div#wrapsub div#content aside#sidebar div#rightbar div.teaser div.sponsoring {
+    clear:both !important;
+    text-align:middle;
+    text-align:center;
+    vertical-align:middle;
+}
+
+html body div#wrapper div#wrapsub div#content aside#sidebar div#rightbar div.teaser div.sponsoring a img {
+    clear:both !important;
+    vertical-align:middle;
+    margin-left:30%;
+}

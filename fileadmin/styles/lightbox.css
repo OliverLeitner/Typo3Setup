@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+/*  fancybox hacks  */
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url('../scripts/fancybox/source/fancybox_sprite.png');
+}
+
+#fancybox-loading div {
+    background: url('../scripts/fancybox/source/fancybox_loading.gif') center center no-repeat;
+}
+
+.fancybox-nav {
+    background: transparent url('../scripts/fancybox/source/blank.gif'); /* helps IE */
+}
+
+#fancybox-buttons a {
+    background-image: url('../scripts/fancybox/source/helpers/fancybox_buttons.png');
+}

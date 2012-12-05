@@ -1,0 +1,102 @@
+# ==============================================================================
+# Default configuration for sp_bettercontact (Systems)
+# ==============================================================================
+plugin.tx_spbettercontact_pi1 {
+
+	## Systems (shows attackers system in spam notification, see manual for details)
+	systems {
+		windows {
+			name    = Windows
+			ident   = Win
+		}
+		windows95 {
+			name    = Windows 95
+			ident   = (Win95)|(Windows 95)
+		}
+		windows98 {
+			name    = Windows 98
+			ident   = (Win98)|(Windows 98)
+		}
+		windowsnt {
+			name    = Windows NT
+			ident   = (WinNT)|(Windows NT)
+		}
+		windows2000 {
+			name    = Windows 2000
+			ident   = (WinNT 5.0)|(Windows NT 5.0)
+		}
+		windowsxp {
+			name    = Windows XP
+			ident   = (WinNT 5.1)|(Windows NT 5.1)
+		}
+		windowsvista {
+			name    = Windows Vista
+			ident   = (WinNT 6.0)|(Windows NT 6.0)
+		}
+		windows7 {
+			name    = Windows 7
+			ident   = (WinNT 7.0)|(Windows NT 7.0)
+		}
+		windows8 {
+			name    = Windows 8
+			ident   = (WinNT 8.0)|(Windows NT 8.0)
+		}
+		linux {
+			name    = Linux
+			ident   = Linux
+		}
+		ubuntu {
+			name    = Ubuntu
+			ident   = Ubuntu
+		}
+		ubuntu610 {
+			name    = Ubuntu 6.10 (Edgy Eft)
+			ident   = Ubuntu/6\.10
+		}
+		ubuntu704 {
+			name    = Ubuntu 7.04 (Feisty Fawn)
+			ident   = Ubuntu/7\.04
+		}
+		ubuntu710 {
+			name    = Ubuntu 7.10 (Gutsy Gibbon)
+			ident   = Ubuntu/7\.10
+		}
+		ubuntu804 {
+			name    = Ubuntu 8.04 (Hardy Heron)
+			ident   = Ubuntu/8\.04
+		}
+		ubuntu810 {
+			name    = Ubuntu 8.10 (Intrepid Ibex)
+			ident   = Ubuntu/8\.10
+		}
+		ubuntu904 {
+			name    = Ubuntu 9.04 (Jaunty Jackalope)
+			ident   = Ubuntu/9\.04
+		}
+		ubuntu910 {
+			name    = Ubuntu 9.10 (Karmic Koala)
+			ident   = Ubuntu/9\.10
+		}
+		ubuntu1004 {
+			name    = Ubuntu 10.04
+			ident   = Ubuntu/10\.04
+		}
+		ubuntu1010 {
+			name    = Ubuntu 10.10
+			ident   = Ubuntu/10\.10
+		}
+		ubuntu1104 {
+			name    = Ubuntu 11.04
+			ident   = Ubuntu/11\.04
+		}
+		macos {
+			name    = Mac OS
+			ident   = (Macintosh)|(Mac_PowerPC)|(Mac)
+		}
+		sunos {
+			name    = Sun OS
+			ident   = Sun
+		}
+	}
+
+}

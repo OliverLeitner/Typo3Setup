@@ -1,0 +1,4 @@
+plugin.tx_veguestbook_pi1 {
+    file.templateFile = fileadmin/templates/ve_guestbook/guestbook.tmpl
+    file.languageFile = fileadmin/translations/ve_guestbook/locallang.xml
+}

@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+
+div#footmap {
+    clear:both;
+    float:left;
+    width:1024px;
+    height:200px;
+    background-color:#333333;
+    color:#ece9e9;
+    font-weight:bold;
+}
+
+div#footmenu {
+    margin-top:10px;
+    margin-left:20px;
+}
+
+div#footmenu ul {
+    text-align:center;
+}
+
+div#footmenu h4 {
+    border-bottom: 1px dotted #FFFFFF;
+    height: 28px;
+    margin-bottom: 8px;
+    margin-right: 55px;
+    margin-top: 10px;
+}
+
+div#footmenu ul li {
+    float:left;
+    width:300px;
+    text-align:left;
+}
+
+div#footmenu ul li a {
+    color:#ffffff;  
+}
+
+div#footmenu ul li ul li {
+    font-weight:normal;
+    height:16px;
+    margin-bottom:2px;
+}
+
+div#footmenu ul li ul li a:hover {
+    height:15px;
+    margin-bottom:2px;
+    /*border-bottom:1px dotted #ffffff;*/
+}
+
+/*icons for the footer menu*/
+img.fb_footmenu {
+    float:right;
+    height:25px;
+}

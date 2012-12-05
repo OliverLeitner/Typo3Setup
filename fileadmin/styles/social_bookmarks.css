@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+.shareBlock {
+    clear: both;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+.twitterLink, .facebookLink, .wongLink {
+    background: #fff url("http://www.neverslair-blog.net/fileadmin/images/social-icons.png") no-repeat;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    text-indent: -9999px;
+}
+
+.gplusLink {
+    background: #fff url("http://www.neverslair-blog.net/fileadmin/images/gplus.png") no-repeat;
+    display: inline-block;
+    height: 34px;
+    width: 35px;
+    text-indent: -9999px;
+}
+
+.facebookLink {background-position: 0 0}
+.twitterLink {background-position: 0 -50px}
+.wongLink {background-position: 0 -100px}
+.gplusLink {background-position: 0 0px}
+

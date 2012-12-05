@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+/*  sr_freecap captcha styles   */
+img.tx-srfreecap-pi2-image { 
+    margin-left: 1em; 
+    margin-right: 1em; 
+    vertical-align: middle; 
+}
+
+.tx-srfreecap-pi2-accessible-image { 
+    vertical-align: middle; 
+}
+
+.tx-srfreecap-pi2-accessible-link { 
+    width: 10em; 
+    float: right; 
+    vertical-align: middle; 
+    margin-right: 7em;
+}
+
+.tx-srfreecap-pi2-cant-read a { 
+    color:#f31f14;
+    text-decoration:none;
+}
+
+.tx-srfreecap-pi2-cant-read a:hover { 
+    color:#f31f14;
+    text-decoration:underline;
+}

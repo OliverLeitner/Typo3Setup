@@ -1,0 +1,102 @@
+# ==============================================================================
+# Default configuration for sp_bettercontact (Browsers)
+# ==============================================================================
+plugin.tx_spbettercontact_pi1 {
+
+	## Browsers (shows attackers browser in spam notification, see manual for details)
+	browsers {
+		ie {
+			name    = Internet Explorer
+			ident   = MSIE
+		}
+		ie4 {
+			name    = Internet Explorer 4
+			ident   = (MSIE 4\.[0-9]+)
+		}
+		ie5 {
+			name    = Internet Explorer 5
+			ident   = (MSIE 5\.[0-9]+)
+		}
+		ie6 {
+			name    = Internet Explorer 6
+			ident   = (MSIE 6\.[0-9]+)
+		}
+		ie7 {
+			name    = Internet Explorer 7
+			ident   = (MSIE 7\.[0-9]+)
+		}
+		ie8 {
+			name    = Internet Explorer 8
+			ident   = (MSIE 8\.[0-9]+)
+		}
+		ie9 {
+			name    = Internet Explorer 9
+			ident   = (MSIE 9\.[0-9]+)
+		}
+		mozilla {
+			name    = Mozilla
+			ident   = Gecko
+		}
+		firefox {
+			name    = Mozilla Firefox
+			ident   = (Firebird)|(Firefox)
+		}
+		firefox2 {
+			name    = Mozilla Firefox 2
+			ident   = Firefox/2
+		}
+		firefox30 {
+			name    = Mozilla Firefox 3.0
+			ident   = Firefox/3.0
+		}
+		firefox35 {
+			name    = Mozilla Firefox 3.5
+			ident   = (Firefox/3.1)|(Firefox/3.5)
+		}
+		firefox4 {
+			name    = Mozilla Firefox 4
+			ident   = Firefox/4
+		}
+		firefox45 {
+			name    = Mozilla Firefox 4.5
+			ident   = Firefox/4.5
+		}
+		firefox5 {
+			name    = Mozilla Firefox 5
+			ident   = Firefox/5
+		}
+		galeon {
+			name    = Galeon
+			ident   = Galeon
+		}
+		opera {
+			name    = Opera
+			ident   = Opera
+		}
+		myie {
+			name    = MyIE
+			ident   = MyIE
+		}
+		lynx {
+			name    = Lynx
+			ident   = Lynx
+		}
+		konqueror {
+			name    = Konqueror
+			ident   = Konqueror
+		}
+		safari {
+			name    = Safari
+			ident   = Safari
+		}
+		chrome {
+			name    = Google Chrome
+			ident   = Chrome
+		}
+		crawler {
+			name    = Crawler
+			ident   = (nuhk)|(Googlebot)|(Yammybot)|(Openbot)|(Slurp/cat)|(msnbot)|(ia_archiver)|(bot)|(crawl)
+		}
+	}
+
+}

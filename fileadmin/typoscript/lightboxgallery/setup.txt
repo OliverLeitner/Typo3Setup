@@ -1,0 +1,23 @@
+#settings for lightboxgallery
+#a summary...
+
+#do we want to use the extensions jquery or our own?
+plugin.tx_lightboxgallery_pi1.jQueryInclude = 0
+
+#thumbnail generation params
+plugin.tx_lightboxgallery_pi1.thumbnailParams = w200-h200-c1.1
+
+#sizeup parameters, default is false
+plugin.tx_lightboxgallery_pi1.sizeupParams = w1024-h768
+
+#imagesorting options, default is alphabetical
+plugin.tx_lightboxgallery_pi1.imageSorting = alphabetical #natural, naturalDesc, alphabetical, alphabeticalDesc, date, dateDesc
+
+#if we want to use our own fancybox install rather than loading the one coming with the extension, we set this to 0
+plugin.tx_lightboxgallery_pi1.loadFancybox = 0
+
+#do we run the lightbox js from the orig file or do we load it from our own...
+plugin.tx_lightboxgallery_pi1.lightboxJS = 0
+
+#do we want to show download/printlink...
+plugin.tx_lightboxgallery_pi1.show_links = 1

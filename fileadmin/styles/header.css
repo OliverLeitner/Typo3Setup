@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+
+/*  layout  */
+div#header {
+    width:1024px;
+    height:180px;
+    background-color:#000000;
+    color:#ffffff;
+}
+
+/* placing the rounded corners top image above the headerbanner */
+div#headcombination img#upperborder {
+    position:relative;
+    z-index:100;
+    padding:0px;
+    margin: -7px 0 0 -6px;
+}
+
+/* needed to slide the headerbanner under the rounded corners image */
+div#headcombination img#headerbanner {
+    position:relative;
+    z-index:50;
+    margin-top:-19px;
+}
+
+/* last but not least we need to assure that our text is always in front of the banner */
+div#headcombination header#headersection hgroup.banner h1 {
+    position:relative;
+    z-index:60;
+}
+
+/* same goes for the slogan */
+div#headcombination header#headersection hgroup.banner h2 {
+    position:absolute;
+    z-index:70;
+}
+
+div#header a {
+    color:#ffffff;
+    text-decoration:none;
+}
+
+div#headimage {
+    width:600px;
+    height:600px;
+}

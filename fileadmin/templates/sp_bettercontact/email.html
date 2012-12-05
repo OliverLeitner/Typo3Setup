@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Default email template</title>
+</head>
+<body>
+<h1>Default email template</h1>
+<p>The following markers could be set:</p>
+<div style="font-family: monospace; font-size:11px; background:#E6EFF9; border:1px dashed #000000; margin-bottom: 24px;">
+	<pre>
+    // General markers
+    ###URL_SELF###
+    ###INFO###
+    ###HIDDEN###
+    ###SUBMIT###
+    ###SUBMIT_VALUE###
+    ###CHARSET###
+
+
+    // Show all messages of all fields as list
+    ###MESSAGES###
+
+
+    // Show inline messages for each field
+    ###MSG_<FIELDNAME>###
+
+
+    // Add error class to each field
+    ###ERR_<FIELDNAME>###
+
+
+    // Show the value of input fields
+    ###VALUE_<FIELDNAME>###
+
+
+    // Set state of a checkbox (radio and select do not need this)
+    ###CHECKED_<FIELDNAME>###
+
+
+    // Show labels for the input fields
+    ###LABEL_<FIELDNAME>###
+
+
+    // Show required symbol for the input fields
+    ###REQUIRED_<FIELDNAME>###
+
+
+    // Show data from a spam attack
+    ###SPAM_DATE###
+    ###SPAM_TIME###
+    ###SPAM_IP###
+    ###SPAM_METHOD###
+    ###SPAM_BROWSER###
+    ###SPAM_SYSTEM###
+    ###SPAM_AGENT###
+    ###SPAM_REFERER###
+
+
+    // Show the values of the hidden input fields
+    ###SPAM_VALUE_<FIELDNAME>###
+    ###SPAM_CHECKED_<FIELDNAME>###
+
+
+    // Show your own markers (define via TypoScript - see manual)
+    ###<NAME_OF_MY_MARKER>###
+
+
+    // Show your own locallang labels (see manual)
+    ###LLL:<label_name>###
+
+
+    // Show page information
+    ###PAGE:<db_fieldname>###
+
+
+    // Show plugin information
+    ###PLUGIN:<db_fieldname>###
+
+
+    // Show user information
+    ###USER:<db_fieldname>###
+	</pre>
+</div>
+
+
+
+
+
+<!-- ###MAIL_MESSAGE_SENDER_PLAIN### begin -->
+###LLL:email_sender_dear### ###VALUE_NAME###,
+
+###LLL:email_sender_body1###
+###LLL:email_sender_body2###
+
+###LLL:email_sender_greetings###
+
+###LLL:email_sender_sender###
+<!-- ###MAIL_MESSAGE_SENDER_PLAIN### end -->
+
+
+
+
+<!-- ###MAIL_MESSAGE_SENDER_HTML### begin -->
+<p>###LLL:email_sender_dear### ###VALUE_NAME###,<br />
+<br />
+###LLL:email_sender_body1###<br />
+###LLL:email_sender_body2###<br />
+<br />
+###LLL:email_sender_greetings###<br />
+<br />
+###LLL:email_sender_sender###</p>
+<!-- ###MAIL_MESSAGE_SENDER_HTML### end -->
+
+
+
+
+<!-- ###MAIL_MESSAGE_ADMIN_PLAIN### begin -->
+###LLL:email_admin_dear###
+
+###LLL:email_admin_body1###
+
+###LABEL_NAME### ###VALUE_NAME###
+###LABEL_TEL### ###VALUE_TEL###
+###LABEL_FAX### ###VALUE_FAX###
+###LABEL_STREET### ###VALUE_STREET###
+###LABEL_CITY### ###VALUE_CITY###
+###LABEL_EMAIL### ###VALUE_EMAIL###
+
+###VALUE_MESSAGE###
+
+###LLL:email_admin_greetings###
+
+###LLL:email_admin_sender###
+<!-- ###MAIL_MESSAGE_ADMIN_PLAIN### end -->
+
+
+
+
+<!-- ###MAIL_MESSAGE_ADMIN_HTML### begin -->
+<p>###LLL:email_admin_dear###<br />
+<br />
+###LLL:email_admin_body1###</p>
+<table>
+    <tr>
+        <td width="80"><strong>###LABEL_NAME###</strong></td>
+        <td>###VALUE_NAME###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LABEL_TEL###</strong></td>
+        <td>###VALUE_TEL###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LABEL_FAX###</strong></td>
+        <td>###VALUE_FAX###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LABEL_STREET###</strong></td>
+        <td>###VALUE_STREET###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LABEL_CITY###</strong></td>
+        <td>###VALUE_CITY###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LABEL_EMAIL###</strong></td>
+        <td>###VALUE_EMAIL###</td>
+    </tr>
+</table>
+<p>###VALUE_MESSAGE###<br />
+<br />
+###LLL:email_admin_greetings###<br />
+<br />
+###LLL:email_admin_sender###</p>
+<!-- ###MAIL_MESSAGE_ADMIN_HTML### end -->
+
+
+
+
+
+<!-- ###MAIL_MESSAGE_SPAM_PLAIN### begin -->
+###LLL:email_spam_dear###
+
+###LLL:email_spam_body1###
+
+
+=============================================
+###LLL:email_spam_headline1###
+=============================================
+###LLL:date### ###SPAM_DATE###
+###LLL:time### ###SPAM_TIME###
+###LLL:ip### ###SPAM_IP###
+###LLL:browser### ###SPAM_BROWSER###
+###LLL:system### ###SPAM_SYSTEM###
+###LLL:referer### ###SPAM_REFERER###
+###LLL:method### ###SPAM_METHOD###
+
+=============================================
+###LLL:email_spam_headline2###
+=============================================
+###LLL:name### ###VALUE_NAME###
+###LLL:tel### ###VALUE_TEL###
+###LLL:fax### ##VALUE_FAX###
+###LLL:street### ###VALUE_STREET###
+###LLL:city### ###VALUE_CITY###
+###LLL:email### ###VALUE_EMAIL###
+###LLL:message### ###VALUE_MESSAGE###
+
+=============================================
+###LLL:email_spam_headline3###
+=============================================
+###LLL:name### ###SPAM_VALUE_NAME###
+###LLL:tel### ###SPAM_VALUE_TEL###
+###LLL:fax### ###SPAM_VALUE_FAX###
+###LLL:street### ###SPAM_VALUE_STREET###
+###LLL:city### ###SPAM_VALUE_CITY###
+###LLL:email### ###SPAM_VALUE_EMAIL###
+###LLL:message### ###SPAM_VALUE_MESSAGE###
+
+
+###LLL:email_spam_gretings###
+
+###LLL:email_spam_sender###
+<!-- ###MAIL_MESSAGE_SPAM_PLAIN### end -->
+
+
+
+
+
+<!-- ###MAIL_MESSAGE_SPAM_HTML### begin -->
+<p>###LLL:email_spam_dear###<br />
+<br />
+###LLL:email_spam_body1###</p>
+<h2>###LLL:email_spam_headline1###</h2>
+<table>
+    <tr>
+        <td width="80"><strong>###LLL:date###</strong></td>
+        <td>###SPAM_DATE###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:time###</strong></td>
+        <td>###SPAM_TIME###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:ip###</strong></td>
+        <td>###SPAM_IP###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:browser###</strong></td>
+        <td>###SPAM_BROWSER###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:system###</strong></td>
+        <td>###SPAM_SYSTEM###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:referer###</strong></td>
+        <td>###SPAM_REFERER###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:method###</strong></td>
+        <td>###SPAM_METHOD###</td>
+    </tr>
+</table>
+<h2>###LLL:email_spam_headline2###</h2>
+<table>
+    <tr>
+        <td width="80"><strong>###LLL:name###</strong></td>
+        <td>###VALUE_NAME###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:tel###</strong></td>
+        <td>###VALUE_TEL###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:fax###</strong></td>
+        <td>###VALUE_FAX###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:street###</strong></td>
+        <td>###VALUE_STREET###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:city###</strong></td>
+        <td>###VALUE_CITY###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:email###</strong></td>
+        <td>###VALUE_EMAIL###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:message###</strong></td>
+        <td>###VALUE_MESSAGE###</td>
+    </tr>
+</table>
+<h2>###LLL:email_spam_headline3###</h2>
+<table>
+    <tr>
+        <td width="80"><strong>###LLL:name###</strong></td>
+        <td>###SPAM_VALUE_NAME###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:tel###</strong></td>
+        <td>###SPAM_VALUE_TEL###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:fax###</strong></td>
+        <td>###SPAM_VALUE_FAX###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:street###</strong></td>
+        <td>###SPAM_VALUE_STREET###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:city###</strong></td>
+        <td>###SPAM_VALUE_CITY###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:email###</strong></td>
+        <td>###SPAM_VALUE_EMAIL###</td>
+    </tr>
+    <tr>
+        <td width="80"><strong>###LLL:message###</strong></td>
+        <td>###SPAM_VALUE_MESSAGE###</td>
+    </tr>
+</table>
+<p>###LLL:email_spam_gretings###<br />
+<br />
+###LLL:email_spam_sender###</p>
+<!-- ###MAIL_MESSAGE_SPAM_HTML### end -->
+
+
+
+
+
+<!-- ###MAIL_SUBJECT_SENDER### begin -->
+###LLL:email_sender_subject###
+<!-- ###MAIL_SUBJECT_SENDER### end -->
+
+
+
+
+
+<!-- ###MAIL_SUBJECT_ADMIN### begin -->
+###VALUE_NAME### ###LLL:email_admin_subject###
+<!-- ###MAIL_SUBJECT_ADMIN### end -->
+
+
+
+
+
+<!-- ###MAIL_SUBJECT_SPAM### begin -->
+###LLL:email_spam_subject###
+<!-- ###MAIL_SUBJECT_SPAM### end -->
+
+
+
+</body>
+</html>

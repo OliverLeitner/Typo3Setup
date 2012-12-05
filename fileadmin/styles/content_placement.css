@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+h1#sitename {
+    font-size:5em;
+    text-shadow: 4px 4px 4px #aaa;
+    position:relative;
+    top:-145px;
+    padding-left:26%;
+}
+
+h2#slogan {
+    font-family:arial,helvetica;
+    font-size:2em;
+    position:absolute;
+    top:125px;
+    padding-left:362px;
+    width:217px;
+    color:#F31F14;
+}
+
+div#wrapper {
+    width:1024px;
+    margin:auto auto;
+}
+
+div#wrapsub {
+    background-color:#ffffff;
+    float:left;
+    border:6px solid #000000;
+}
+
+div#content div#body a:hover {
+    color:#f31f14;
+}
+
+div#body {
+    background-color:#EEEEEE;
+    float:left;
+    margin:34px 0 19px 17px;
+    padding: 20px 0 0;
+    width:760px;
+    min-height:831px;
+    border:1px solid #999999;
+}
+
+div#content {
+    position:relative;
+}
+
+div#footer {
+    clear:both;
+    width:1024px;
+    height:20px;
+    color:#ffffff;
+    padding-top:6px;
+    background-color:#000000;
+    text-align:right;
+}

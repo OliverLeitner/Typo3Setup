@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+
+/*  ve_guestbook styles */
+.tx-veguestbook-pi1 {
+    text-align:left;
+}
+
+.tx-veguestbook-pi1 form {
+    float:left;
+}
+  
+/* error handling */
+.tx-veguestbook-pi1 p.tx-guestbook-form-error {
+    font-weight:bold;
+    color:#990000;
+}
+    
+/* display of result count */
+.tx-veguestbook-pi1 .tx-guestbook-result {
+    float:left;
+}
+    
+/* pagination */
+.tx-veguestbook-pi1 .tx-guestbook-pagination {
+    font-weight:normal;
+    float:right;
+}
+    
+/* styles for list mode */
+.tx-veguestbook-pi1 h2.tx-guestbook-header {
+    background:#666;
+    color:#FFF;
+    display:block;
+    font-weight:normal;
+    margin:0 !important;
+    padding:0 !important;
+}
+ 
+.tx-veguestbook-pi1 .tx-guestbook-right {
+    float:left;
+    width:699px;
+    background:#FFF;
+}
+    
+/* styles for latest mode */
+.tx-veguestbook-pi1 .tx-guestbook-latest p,
+.tx-veguestbook-pi1 .tx-guestbook-right p {
+    color:#333;
+    padding-left:10px;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-latest p.tx-guestbook-date,
+.tx-veguestbook-pi1 .tx-guestbook-right p.tx-guestbook-date {
+       font-weight: bold;
+}
+ 
+.tx-veguestbook-pi1 .tx-guestbook-right h3 {
+    font-size:100%;
+    color:#990000;
+    font-weight:bold;
+    background:none;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-right .tx-guestbook-comment {
+    font-size:75%;
+    color:#333;
+    font-style: italic;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-latest {
+    display:block;
+    padding:0.25em;
+    clear:both;
+}
+    
+/* form styles */
+.tx-veguestbook-pi1 .tx-guestbook-field {
+    clear:both;
+    width:100%;
+    display:block;
+    padding: 1em 0;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-field label {
+    clear: both;
+    display: block;
+    float: left;
+    width: 10em;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-field input.tx-guestbook-form-inputfield-med {
+    float:left;
+    width:10em;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-field input.tx-guestbook-form-inputfield-big {
+    float:left;
+    width:20em;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-field textarea.tx-guestbook-form-textarea {
+    width: 30em;
+    display: block;
+    float: left;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-field span.tx-guestbook-form-obligationfield {
+    color:#990000;
+}
+    
+.tx-veguestbook-pi1 fieldset {
+    border:none;
+}
+
+.tx-veguestbook-pi1 legend {
+    display:none;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-freecap {
+    float:left;
+    display:block;
+    background:#F7F7F7;
+    border:1px solid #CCC;
+}
+ 
+.tx-veguestbook-pi1 .tx-guestbook-freecap {
+    margin-left:2.25em;
+}
+ 
+    
+.tx-veguestbook-pi1 .tx-guestbook-freecap img {
+    float:left;
+    display:block;
+    padding-left:0.25em;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-freecap input {
+    float:left;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-freecap label {
+    clear:both;
+    display:block;
+    float:none;
+    width:10em;
+    margin-bottom:0.5em;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-freecap p {
+    font-size:75%;
+    padding:0.25em;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-freecap h3 {
+    display:none;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-freecap span.tx-srfreecap-pi2-cant-read {
+    color:#990000;
+}
+    
+.tx-veguestbook-pi1 .tx-guestbook-clear {
+    clear:both;
+    display:block;
+}
+    
+.tx-veguestbook-pi1 input.tx-guestbook-submit {
+    width:auto;
+    display:block;
+}
+
+.tx-veguestbook-pi1 h2.tx-guestbook-header span.guestbook_date {
+    float:right;
+}
+
+div.tx-veguestbook-pi1 div.tx-guestbook-pagination a {
+    color:#F31F14;
+}
+
+div.tx-veguestbook-pi1 form fieldset div.tx-guestbook-field label span.freecap-span span.tx-srfreecap-pi2-cant-read a {
+    color:#f31f14;
+    text-decoration:none;
+}
+
+div.tx-veguestbook-pi1 form fieldset div.tx-guestbook-field label span.freecap-span span.tx-srfreecap-pi2-cant-read a:hover {
+    border-bottom:1px dotted #f31f14;
+}

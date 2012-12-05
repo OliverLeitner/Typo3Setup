@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: 'open-sans';
+    src: local('☺'), url('../fonts/open-sans/OpenSans-Regular-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*	core	*/
+body {
+	background-color:#242424;
+	font-family:'open-sans','Ubuntu',arial,helvetica;
+	font-size:0.8em;
+	margin:0;
+	padding:0;
+}
+
+li {
+	list-style-type:none;
+}
+
+body, h1, h2, h3, h4, ul, ol, li, div, span, a {
+	margin:0;
+	padding:0;
+}
+
+a {
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+/* html5 does not allow border attribute on images, so we do it here... */
+img {
+	border:0px !important;
+}
+
+strong {
+	color:#000000;
+}
+
+var {
+	color:#666666;
+}
+
+h2 {
+	font-size:1.2em;
+}
+
+h3 {
+	font-size:1.5em;
+}

@@ -1,0 +1,450 @@
+@CHARSET "UTF-8";
+
+/* default styles for extension "tx_cssstyledcontent" */
+/* Captions */
+DIV.csc-textpic-caption-c .csc-textpic-caption { 
+    text-align: center; 
+}
+
+DIV.csc-textpic-caption-r .csc-textpic-caption { 
+    text-align: right; 
+}
+
+DIV.csc-textpic-caption-l .csc-textpic-caption { 
+    text-align: left; 
+}
+
+/* Needed for noRows setting */
+DIV.csc-textpic DIV.csc-textpic-imagecolumn { 
+    float: left; 
+    display: inline; 
+}
+
+/* Border just around the image */
+DIV.csc-textpic-border DIV.csc-textpic-imagewrap .csc-textpic-image IMG, DIV.csc-textpic-border DIV.csc-textpic-single-image IMG {
+    /*border: 2px solid black;*/
+    padding: 0px 0px;
+}
+
+DIV.csc-textpic-imagewrap { 
+    padding: 0; 
+}
+
+DIV.csc-textpic IMG { 
+    border: none;
+    margin-bottom:10px;
+}
+
+/* DIV: This will place the images side by side */
+DIV.csc-textpic DIV.csc-textpic-imagewrap DIV.csc-textpic-image { 
+    float: left; 
+}
+
+/* UL: This will place the images side by side */
+DIV.csc-textpic DIV.csc-textpic-imagewrap UL { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+DIV.csc-textpic DIV.csc-textpic-imagewrap UL LI { 
+    float: left; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* DL: This will place the images side by side */
+DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image { 
+    float: left; 
+}
+
+DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DT { 
+    float: none; 
+}
+
+DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DD { 
+    float: none; 
+}
+
+DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DD IMG { 
+    border: none; 
+}
+
+/* FE-Editing Icons */
+DL.csc-textpic-image { 
+    margin: 0; 
+}
+
+DL.csc-textpic-image DT { 
+    margin: 0; 
+    display: inline; 
+}
+
+DL.csc-textpic-image DD { 
+    margin: 0; 
+}
+
+/* Clearer */
+DIV.csc-textpic-clear { 
+    clear: both; 
+}
+
+/* Margins around images: */
+
+/* Pictures on left, add margin on right */
+DIV.csc-textpic-left DIV.csc-textpic-imagewrap .csc-textpic-image,
+DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap .csc-textpic-image,
+DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap .csc-textpic-image {
+    display: inline; /* IE fix for double-margin bug */
+    margin-right: 10px;
+}
+
+/* Pictures on right, add margin on left */
+DIV.csc-textpic-right DIV.csc-textpic-imagewrap .csc-textpic-image,
+DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap .csc-textpic-image,
+DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap .csc-textpic-image {
+    display: inline; /* IE fix for double-margin bug */
+    margin-left: 10px;
+}
+
+/* Pictures centered, add margin on left */
+DIV.csc-textpic-center DIV.csc-textpic-imagewrap .csc-textpic-image {
+    display: inline; /* IE fix for double-margin bug */
+    margin-left: 10px;
+}
+
+DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image .csc-textpic-caption { 
+    margin: 0;
+}
+
+DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image IMG { 
+    margin: 0; 
+    vertical-align:bottom; 
+}
+
+/* Space below each image (also in-between rows) */
+DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image { 
+    margin-bottom: 10px; 
+}
+
+DIV.csc-textpic-equalheight DIV.csc-textpic-imagerow { 
+    margin-bottom: 10px; 
+    display: block; 
+}
+
+DIV.csc-textpic DIV.csc-textpic-imagerow { 
+    clear: both; 
+}
+
+DIV.csc-textpic DIV.csc-textpic-single-image IMG { 
+    margin-bottom: 10px;
+}
+
+/* IE7 hack for margin between image rows */
+*+html DIV.csc-textpic DIV.csc-textpic-imagerow .csc-textpic-image { 
+    margin-bottom: 0;
+}
+
+*+html DIV.csc-textpic DIV.csc-textpic-imagerow { 
+    margin-bottom: 10px; 
+}
+
+/* No margins around the whole image-block */
+DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-firstcol { 
+    margin-left: 0px !important;
+}
+
+DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-lastcol { 
+    margin-right: 0px !important; 
+}
+
+/* Add margin from image-block to text (in case of "Text w/ images") */
+DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap,
+DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap {
+    margin-right: 10px !important;
+}
+
+DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap,
+DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap {
+    margin-left: 10px !important;
+}
+
+/* Positioning of images: */
+
+/* Above */
+DIV.csc-textpic-above DIV.csc-textpic-text { 
+    clear: both;
+}
+
+/* Center (above or below) */
+DIV.csc-textpic-center { 
+    text-align: center; /* IE-hack */ 
+}
+
+DIV.csc-textpic-center DIV.csc-textpic-imagewrap { 
+    margin: 0 auto; 
+}
+
+DIV.csc-textpic-center DIV.csc-textpic-imagewrap .csc-textpic-image { 
+    text-align: left; /* Remove IE-hack */ 
+}
+
+DIV.csc-textpic-center DIV.csc-textpic-text { 
+    text-align: left; /* Remove IE-hack */ 
+}
+
+/* Right (above or below) */
+DIV.csc-textpic-right DIV.csc-textpic-imagewrap { 
+    float: right; 
+}
+
+DIV.csc-textpic-right DIV.csc-textpic-text { 
+    clear: right; 
+}
+
+/* Left (above or below) */
+DIV.csc-textpic-left DIV.csc-textpic-imagewrap { 
+    float: left; 
+}
+
+DIV.csc-textpic-left DIV.csc-textpic-text { 
+    clear: left; 
+}
+
+/* Left (in text) */
+DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap { 
+    float: left; 
+}
+
+/* Right (in text) */
+DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap { 
+    float: right; 
+}
+
+/* Right (in text, no wrap around) */
+DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap { 
+    float: right; 
+    clear: both; 
+}
+
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html DIV.csc-textpic-intext-right-nowrap .csc-textpic-text { 
+    height: 1%; 
+}
+/* End hide from IE5/mac */
+
+/* Left (in text, no wrap around) */
+DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap { 
+    float: left; 
+    clear: both; 
+}
+
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html DIV.csc-textpic-intext-left-nowrap .csc-textpic-text,
+* html .csc-textpic-intext-left ol,
+* html .csc-textpic-intext-left ul { 
+    height: 1%; 
+}
+/* End hide from IE5/mac */
+
+DIV.csc-textpic DIV.csc-textpic-imagerow-last { 
+    margin-bottom: 0; 
+}
+
+/* Browser fixes: */
+
+/* Fix for unordered and ordered list with image "In text, left" */
+.csc-textpic-intext-left ol, .csc-textpic-intext-left ul {
+    padding-left: 40px; 
+    overflow: auto; 
+}
+    
+/*  content elements    */
+div#standard-text {
+    float:left;
+    margin-bottom:20px;
+    padding-left:20px;
+    width:760px;
+    max-width:700px;
+}
+
+div#standard-text h2 {
+    clear:both;
+    border-bottom:1px dotted #000000;
+    padding-top:10px;
+    margin-bottom:10px;
+    /*ie9 special*/
+    max-width:700px;
+}
+
+div#standard-text h3 {
+    clear:both;
+}
+
+div#standard-text figure {
+    margin:0;
+    padding:0;
+    margin-bottom:10px;
+}
+
+div#standard-text figure a img {
+    max-width:700px;
+}
+
+/*  special case ie8    */
+div#standard-text img {
+    border:0px;
+    margin:0px;
+    padding:0px;
+    max-width:700px;
+}
+
+div#standard-text figure figcaption {
+    background-color:#b2b2b2;
+    color:#ffffff;
+    border:0;
+    padding-top:2px;
+    padding-bottom:2px;
+    text-align:center;
+}
+
+div#standard-text ul, div#standard-text ol {
+    clear:both;
+    margin-left:20px;
+    margin-bottom:10px;
+    margin-top:10px;
+    color:#666666;
+}
+
+div#standard-text ol li {
+    list-style-type:decimal;
+}
+
+div#standard-text ul li {
+    list-style-type:disc;
+}
+
+/*ie9 needs this...*/
+div#standard-text p {
+    margin-bottom:10px;
+    color:#21221F;
+    max-width:740px;
+    line-height:20px;
+}
+
+div#standard-text p a {
+    color:#f31f14;
+    text-decoration:none;
+}
+
+div#standard-text p a:hover {
+    border-bottom:1px dotted #f31f14;
+}
+
+/*  content element styling extras  */
+
+/*in text left*/
+div.csc-textpic-intext-left a img {
+    float:left;
+    margin-right:10px;
+}
+
+/*in text right*/
+div.csc-textpic-intext-right a img {
+    float:right;
+    margin-left:10px;
+}
+
+div.csc-textpic-above {
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+
+div.csc-textpic-above dl {
+    max-width:700px !important; /*  somewhere its hardcoded, god, i love typo3  */
+    margin-bottom:6px;
+}
+
+/*table as a content element*/
+table.contenttable {
+    border:1px dotted #4b4a46;
+    margin-bottom:10px;
+    max-width:700px;
+}
+
+table.contenttable tr th {
+    padding:4px;
+    vertical-align:top;
+}
+
+table.contenttable tr td {
+    padding:4px;
+    vertical-align:top;
+}
+
+table.contenttable tr.tr-even {
+    background-color:#e0e0e0;
+}
+
+table.contenttable tr.tr-odd {
+    background-color:#fafafa;
+}
+
+table.contenttable caption {
+    background-color:#333333;
+    color:#ffffff;
+    height:30px;
+    padding-top:8px;
+    font-weight:bold;
+}
+
+/*file upload as a content element*/
+table.csc-uploads {
+    background-color:#fafafa;
+    border:1px dotted #333333;
+    width:700px;
+}
+
+table.csc-uploads tr.tr-even {
+    background-color:#e0e0e0;
+}
+
+table.csc-uploads tr td {
+    margin:0px;
+    padding:0px;
+    vertical-align:top;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:4px;
+    max-width:590px;
+}
+
+table.csc-uploads tr td p {
+    margin:0px;
+    padding:0px;
+}
+
+/*sitemap as a content element*/
+ul.csc-menu li a, dl.csc-menu dd a, div.csc-sitemap ul li a {
+    color:#f31f14;
+    text-decoration:none;
+    font-size:1.2em;
+    line-height:24px;
+}
+
+ul.csc-menu li a:hover, dl.csc-menu dd a:hover, div.csc-sitemap ul li a:hover {
+    border-bottom:1px dotted #f31f14;
+}
+
+/* special content stylings */
+.csc-frame-frame1 {
+    background:#21221F;
+    border:1px solid #000000;
+    color:#999999 !important;
+    width:auto;
+    padding-left:20px;
+    padding-bottom:20px;
+    padding-top:20px;
+    font:Arial, Helvetica, sans-serif !important;
+}

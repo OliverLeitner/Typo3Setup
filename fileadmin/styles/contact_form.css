@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+
+/*  sp_bettercontact contact form extension styles  */
+div.tx-spbettercontact-pi1 {
+    padding: 0px 24px 24px;
+}
+
+div.tx-spbettercontact-pi1 input,
+div.tx-spbettercontact-pi1 textarea {
+    background-color: #FDFDFD;
+    border: 1px solid #A1A1A1;
+    padding: 2px 3px;
+    /*width: 300px;*/
+}
+
+div.tx-spbettercontact-pi1 textarea {
+    height: 100px;
+}
+
+div.tx-spbettercontact-pi1 p.tx_spbettercontact_button input {
+    background-color: #FDFDFD;
+    border: 1px solid #A1A1A1;
+    cursor: pointer;
+    width: 150px;
+    height: 23px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+div.tx-spbettercontact-pi1 p.tx_spbettercontact_button input:focus {
+    outline: none;
+}
+
+div.tx-spbettercontact-pi1 input.error,
+div.tx-spbettercontact-pi1 textarea.error {
+    border: 1px solid #FF0000;
+}
+
+div.tx-spbettercontact-pi1 br {
+    clear: left;
+}
+
+div.tx-spbettercontact-pi1 .tx_spbettercontact_info {
+    font-weight: bold;
+}
+
+div.tx-spbettercontact-pi1 .tx_spbettercontact_info_positive {
+    color: #01b101;
+}
+
+div.tx-spbettercontact-pi1 .tx_spbettercontact_info_negative {
+    color: #FF8F33;
+}
+
+div.tx-spbettercontact-pi1 .tx_spbettercontact_message {
+    width: 410px;
+}
+
+div.tx-spbettercontact-pi1 .tx_spbettercontact_messages ul li {
+    list-style-type: square;
+}
+
+div.tx-spbettercontact-pi1 .tx_spbettercontact_label {
+    width: 100px;
+    float: left;
+    padding-top: 4px;
+}
+
+div.tx-spbettercontact-pi1 .tx_spbettercontact_button {
+    display: block;
+    width: 410px;
+    text-align: right;
+}
+
+div.tx-spbettercontact-pi1 .tx_spbettercontact_hidden {
+    position: absolute;
+    top: -2000px;
+}
+
+div.tx-spbettercontact-pi1 .tx_spbettercontact_captcha {
+    padding-left: 100px;
+    width: 300px;
+    overflow: visible;
+}
+
+div.tx-spbettercontact-pi1 .tx_spbettercontact_captcha img {
+    border: 1px solid #A1A1A1;
+    padding: 0;
+    margin: 0;
+}
+
+div.tx-spbettercontact-pi1 form#tx_spbettercontact_pi1-86 div.tx_spbettercontact_captcha div.tx_spbettercontact_captcha_cant_read span.tx-srfreecap-pi2-cant-read a {
+    color:#f31f14;
+    text-decoration:none;
+}
+
+div.tx-spbettercontact-pi1 form#tx_spbettercontact_pi1-86 div.tx_spbettercontact_captcha div.tx_spbettercontact_captcha_cant_read span.tx-srfreecap-pi2-cant-read a:hover {
+    border-bottom:1px dotted #f31f14;
+}
