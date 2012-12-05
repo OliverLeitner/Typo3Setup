@@ -98,8 +98,7 @@ fileadmin/typoscript/social_bookmarks.ts	<--- social bookmarking icons "share th
 
 typo3conf/localconf.php	<--- global configuration file, cleaned up and ready to use
 typo3conf/ext/lightboxgallery/pi1/class.tx_lightboxgallery_pi1.php	<--- lightboxgallery frontend output with some hacks
-typo3conf/ext/lightboxgallery/ext_emconf.php	<--- the plugin registration script with version set to 99.99 so we wont get upgraded over our
-customisation
+typo3conf/ext/lightboxgallery/ext_emconf.php	<--- the plugin registration script with version set to 99.99 so we wont get upgraded over our customisation
 extension from: http://typo3.org/extensions/repository/view/lightboxgallery/
 
 greetings
