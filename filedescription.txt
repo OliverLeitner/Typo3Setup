@@ -1,5 +1,6 @@
 A base information on the structure:
 
+orig.htaccess	<--- some htaccess magic i majorly found on some pad
 fileadmin/botresponse/bot-response.php	<--- landing file for all evil web crawler bots
 code from: http://www.spanishseo.org/block-spam-bots-scrapers
 
